@@ -1,0 +1,11 @@
+{
+  "bot_token": "7228410606:AAGewa_Lu-va5o1xABMo14H_aKux4MWuzas",
+  "db": {
+    "driver": "mysql+pymysql",
+    "username": "root",
+    "password": "admin",
+    "ip": "localhost",
+    "port": "3306",
+    "name": ""
+  }
+}
