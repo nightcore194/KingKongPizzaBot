@@ -29,7 +29,7 @@ async def main() -> None:
     try:
         logging.basicConfig(filename='./log/bot.log', level=logging.DEBUG,
                             format='%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
-        dp.include_routers(admin.router, cooking.router, info.router, report.router)
+        dp.include_routers(admin.router, report.router, cooking.router, info.router)
         await bot.delete_webhook()
         await dp.start_polling(bot)
     finally:

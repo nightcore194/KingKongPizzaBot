@@ -1,3 +1,4 @@
+import logging
 from datetime import datetime
 
 from aiogram import F, Router
@@ -29,7 +30,7 @@ async def analyze(callback: CallbackQuery, state: FSMContext) -> None:
         case "all":
             result = db.query(func.sum(Order.price).label("sum_price")).first()
             if result.sum_price is not None:
-                price = int(result.sum_price)
+                price = float(result.sum_price)
             else:
                 price = 0
             await bot.send_message(callback.from_user.id,
@@ -51,11 +52,14 @@ async def analyze_input_date(message: Message, state: FSMContext) -> None:
 async def analyze_date(message: Message, state: FSMContext) -> None:
     data = await state.get_data()
     start_date = datetime.strptime(data["start_date"], "%d.%m.%Y").strftime("%Y-%m-%d")
+    logging.debug(start_date)
     end_date = datetime.strptime(message.text, "%d.%m.%Y").strftime("%Y-%m-%d")
+    logging.debug(end_date)
     markup = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="В меню", callback_data='go_back')]])
     result = db.query(func.sum(Order.price).label("sum_price")).filter(Order.date.between(start_date, end_date)).first()
+    logging.debug(result)
     if result.sum_price is not None:
-        price = int(result.sum_price)
+        price = float(result.sum_price)
     else:
         price = 0
     await state.clear()
@@ -64,7 +68,14 @@ async def analyze_date(message: Message, state: FSMContext) -> None:
                            reply_markup=markup)
 
 
-@router.message(StatesReport.result, StatesReport.inputEndDate)
+@router.message(StatesReport.result)
+async def analyze_input_result_error(message: Message) -> None:
+    markup = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="В меню", callback_data='go_back')]])
+    await bot.send_message(message.from_user.id, "Неверно введена дата", reply_markup=markup)
+
+
+@router.message(StatesReport.inputEndDate)
 async def analyze_input_date_error(message: Message) -> None:
     markup = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="В меню", callback_data='go_back')]])
     await bot.send_message(message.from_user.id, "Неверно введена дата", reply_markup=markup)
+

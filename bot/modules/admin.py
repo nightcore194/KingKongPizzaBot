@@ -158,7 +158,7 @@ async def input_employee(message: Message, state: FSMContext) -> None:
             pass
     data = await state.get_data()
     data.pop("class_name")
-    db.add(eval(class_name)(**data))
+    db.add(eval(class_name)(**data)) # **data -> db.add(Order(name="value", client_id="value", ...))
     db.commit()
     await state.clear()
     await bot.send_message(message.from_user.id, "Успешно добавлено!", reply_markup=markup)
@@ -200,7 +200,7 @@ async def info_obj(callback: CallbackQuery) -> None:
         case "Order":
             if obj.type == "dropoff":
                 obj_keys.remove("address")
-            obj_keys.remove("deliver_date")
+                obj_keys.remove("deliver_date")
             obj_keys.remove("date")
     for key in obj_keys:
         if isAdmin(callback.from_user.id) and key != "status":

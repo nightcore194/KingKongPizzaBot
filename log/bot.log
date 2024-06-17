@@ -651,3 +651,200 @@ AttributeError: 'NoneType' object has no attribute 'from_user'
 2024-06-17 03:35:16,433 INFO aiogram.event MainThread : Update id=692520724 is handled. Duration 235 ms by bot id=7395504801
 2024-06-17 03:35:18,321 INFO aiogram.dispatcher MainThread : Polling stopped
 2024-06-17 03:35:18,586 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:35:36,283 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:35:36,341 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:35:38,469 INFO aiogram.event MainThread : Update id=692520725 is handled. Duration 250 ms by bot id=7395504801
+2024-06-17 03:35:45,968 INFO aiogram.event MainThread : Update id=692520726 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:35:56,486 INFO aiogram.event MainThread : Update id=692520727 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:36:10,916 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:36:11,175 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 13:29:26,338 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 13:29:26,398 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 13:29:30,522 INFO aiogram.event MainThread : Update id=692520728 is handled. Duration 327 ms by bot id=7395504801
+2024-06-17 13:29:34,768 INFO aiogram.event MainThread : Update id=692520729 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:29:36,670 INFO aiogram.event MainThread : Update id=692520730 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 13:29:38,309 INFO aiogram.event MainThread : Update id=692520731 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 13:29:41,425 INFO aiogram.event MainThread : Update id=692520732 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:29:42,582 INFO aiogram.event MainThread : Update id=692520733 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 13:29:43,558 INFO aiogram.event MainThread : Update id=692520734 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 13:29:49,600 INFO aiogram.event MainThread : Update id=692520735 is handled. Duration 202 ms by bot id=7395504801
+2024-06-17 13:29:53,688 ERROR root MainThread : time data '1312532423' does not match format '%d.%m.%Y'
+2024-06-17 13:29:53,688 INFO aiogram.event MainThread : Update id=692520736 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 13:30:53,492 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 13:30:53,757 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 13:30:59,323 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 13:30:59,394 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 13:31:00,251 INFO aiogram.event MainThread : Update id=692520737 is handled. Duration 578 ms by bot id=7395504801
+2024-06-17 13:31:01,541 INFO aiogram.event MainThread : Update id=692520738 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:31:02,820 INFO aiogram.event MainThread : Update id=692520739 is handled. Duration 172 ms by bot id=7395504801
+2024-06-17 13:31:06,100 INFO aiogram.event MainThread : Update id=692520740 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 13:31:13,008 INFO aiogram.event MainThread : Update id=692520741 is handled. Duration 94 ms by bot id=7395504801
+2024-06-17 13:31:15,318 ERROR root MainThread : time data '1312312453654' does not match format '%d.%m.%Y'
+2024-06-17 13:31:15,318 INFO aiogram.event MainThread : Update id=692520742 is handled. Duration 92 ms by bot id=7395504801
+2024-06-17 13:31:49,450 INFO aiogram.event MainThread : Update id=692520743 is handled. Duration 327 ms by bot id=7395504801
+2024-06-17 13:31:50,302 INFO aiogram.event MainThread : Update id=692520744 is handled. Duration 157 ms by bot id=7395504801
+2024-06-17 13:31:52,640 INFO aiogram.event MainThread : Update id=692520745 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:31:56,516 INFO aiogram.event MainThread : Update id=692520746 is handled. Duration 110 ms by bot id=7395504801
+2024-06-17 13:32:03,606 INFO aiogram.event MainThread : Update id=692520747 is handled. Duration 218 ms by bot id=7395504801
+2024-06-17 13:32:09,756 INFO aiogram.event MainThread : Update id=692520748 is handled. Duration 203 ms by bot id=7395504801
+2024-06-17 13:32:11,927 INFO aiogram.event MainThread : Update id=692520749 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 13:32:15,926 INFO aiogram.event MainThread : Update id=692520750 is handled. Duration 186 ms by bot id=7395504801
+2024-06-17 13:32:17,262 INFO aiogram.event MainThread : Update id=692520751 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 13:32:20,124 DEBUG root MainThread : ['id', 'content']
+2024-06-17 13:32:20,219 INFO aiogram.event MainThread : Update id=692520752 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 13:32:23,569 INFO aiogram.event MainThread : Update id=692520753 is handled. Duration 92 ms by bot id=7395504801
+2024-06-17 13:32:28,687 INFO aiogram.event MainThread : Update id=692520754 is handled. Duration 109 ms by bot id=7395504801
+2024-06-17 13:32:30,268 INFO aiogram.event MainThread : Update id=692520755 is handled. Duration 172 ms by bot id=7395504801
+2024-06-17 13:32:31,561 INFO aiogram.event MainThread : Update id=692520756 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 13:32:32,512 INFO aiogram.event MainThread : Update id=692520757 is handled. Duration 94 ms by bot id=7395504801
+2024-06-17 13:32:35,058 INFO aiogram.event MainThread : Update id=692520758 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:32:36,172 DEBUG root MainThread : ['id', 'content']
+2024-06-17 13:32:36,322 INFO aiogram.event MainThread : Update id=692520759 is handled. Duration 156 ms by bot id=7395504801
+2024-06-17 13:32:43,776 INFO aiogram.event MainThread : Update id=692520760 is handled. Duration 233 ms by bot id=7395504801
+2024-06-17 13:32:44,819 INFO aiogram.event MainThread : Update id=692520761 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 13:32:45,999 INFO aiogram.event MainThread : Update id=692520762 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 13:32:47,103 INFO aiogram.event MainThread : Update id=692520763 is handled. Duration 172 ms by bot id=7395504801
+2024-06-17 13:33:01,496 INFO aiogram.event MainThread : Update id=692520764 is handled. Duration 203 ms by bot id=7395504801
+2024-06-17 13:33:02,877 INFO aiogram.event MainThread : Update id=692520765 is handled. Duration 172 ms by bot id=7395504801
+2024-06-17 13:33:04,171 INFO aiogram.event MainThread : Update id=692520766 is handled. Duration 171 ms by bot id=7395504801
+2024-06-17 13:33:05,574 INFO aiogram.event MainThread : Update id=692520767 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 13:33:06,638 ERROR root MainThread : 'NoneType' object has no attribute 'name'
+2024-06-17 13:33:06,638 INFO aiogram.event MainThread : Update id=692520768 is handled. Duration 94 ms by bot id=7395504801
+2024-06-17 13:33:15,044 INFO aiogram.event MainThread : Update id=692520769 is handled. Duration 266 ms by bot id=7395504801
+2024-06-17 13:33:16,297 INFO aiogram.event MainThread : Update id=692520770 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 13:33:20,340 INFO aiogram.event MainThread : Update id=692520771 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 13:33:21,859 INFO aiogram.event MainThread : Update id=692520772 is handled. Duration 79 ms by bot id=7395504801
+2024-06-17 13:33:35,771 INFO aiogram.event MainThread : Update id=692520773 is handled. Duration 94 ms by bot id=7395504801
+2024-06-17 13:33:39,494 INFO aiogram.event MainThread : Update id=692520774 is handled. Duration 297 ms by bot id=7395504801
+2024-06-17 13:33:42,472 INFO aiogram.event MainThread : Update id=692520775 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 13:33:43,757 INFO aiogram.event MainThread : Update id=692520776 is handled. Duration 188 ms by bot id=7395504801
+2024-06-17 13:33:44,647 INFO aiogram.event MainThread : Update id=692520777 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 13:33:45,662 INFO aiogram.event MainThread : Update id=692520778 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:33:46,956 INFO aiogram.event MainThread : Update id=692520779 is handled. Duration 140 ms by bot id=7395504801
+2024-06-17 13:33:48,491 DEBUG root MainThread : ['id', 'content']
+2024-06-17 13:33:48,655 INFO aiogram.event MainThread : Update id=692520780 is handled. Duration 170 ms by bot id=7395504801
+2024-06-17 13:33:58,931 INFO aiogram.event MainThread : Update id=692520781 is handled. Duration 157 ms by bot id=7395504801
+2024-06-17 13:34:01,216 INFO aiogram.event MainThread : Update id=692520782 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 13:34:06,974 INFO aiogram.event MainThread : Update id=692520783 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 13:34:07,966 INFO aiogram.event MainThread : Update id=692520784 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 13:34:09,602 DEBUG root MainThread : ['id', 'name', 'price', 'recipe_id']
+2024-06-17 13:34:09,734 INFO aiogram.event MainThread : Update id=692520785 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:34:12,524 INFO aiogram.event MainThread : Update id=692520786 is handled. Duration 155 ms by bot id=7395504801
+2024-06-17 13:34:18,246 INFO aiogram.event MainThread : Update id=692520787 is handled. Duration 187 ms by bot id=7395504801
+2024-06-17 13:34:19,627 INFO aiogram.event MainThread : Update id=692520788 is handled. Duration 344 ms by bot id=7395504801
+2024-06-17 13:34:20,887 INFO aiogram.event MainThread : Update id=692520789 is handled. Duration 156 ms by bot id=7395504801
+2024-06-17 13:34:21,924 INFO aiogram.event MainThread : Update id=692520790 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:34:22,999 INFO aiogram.event MainThread : Update id=692520791 is handled. Duration 203 ms by bot id=7395504801
+2024-06-17 13:34:24,412 DEBUG root MainThread : ['id', 'content']
+2024-06-17 13:34:24,547 INFO aiogram.event MainThread : Update id=692520792 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:34:26,641 INFO aiogram.event MainThread : Update id=692520793 is handled. Duration 328 ms by bot id=7395504801
+2024-06-17 13:34:27,723 INFO aiogram.event MainThread : Update id=692520794 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 13:34:29,095 INFO aiogram.event MainThread : Update id=692520795 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 13:34:30,049 INFO aiogram.event MainThread : Update id=692520796 is handled. Duration 171 ms by bot id=7395504801
+2024-06-17 13:34:31,035 DEBUG root MainThread : ['id', 'name', 'price', 'recipe_id']
+2024-06-17 13:34:31,194 INFO aiogram.event MainThread : Update id=692520797 is handled. Duration 172 ms by bot id=7395504801
+2024-06-17 13:34:35,305 INFO aiogram.event MainThread : Update id=692520798 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:34:41,690 INFO aiogram.event MainThread : Update id=692520799 is handled. Duration 218 ms by bot id=7395504801
+2024-06-17 13:34:43,116 INFO aiogram.event MainThread : Update id=692520800 is handled. Duration 328 ms by bot id=7395504801
+2024-06-17 13:34:44,223 INFO aiogram.event MainThread : Update id=692520801 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 13:34:47,965 INFO aiogram.event MainThread : Update id=692520802 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 13:34:48,709 INFO aiogram.event MainThread : Update id=692520803 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 13:34:50,033 DEBUG root MainThread : ['id', 'name', 'price', 'recipe_id']
+2024-06-17 13:34:50,184 INFO aiogram.event MainThread : Update id=692520804 is handled. Duration 157 ms by bot id=7395504801
+2024-06-17 13:34:53,235 INFO aiogram.event MainThread : Update id=692520805 is handled. Duration 172 ms by bot id=7395504801
+2024-06-17 13:34:54,694 INFO aiogram.event MainThread : Update id=692520806 is handled. Duration 140 ms by bot id=7395504801
+2024-06-17 13:34:56,542 INFO aiogram.event MainThread : Update id=692520807 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 13:34:58,744 INFO aiogram.event MainThread : Update id=692520808 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 13:35:03,153 INFO aiogram.event MainThread : Update id=692520809 is handled. Duration 436 ms by bot id=7395504801
+2024-06-17 13:35:04,417 INFO aiogram.event MainThread : Update id=692520810 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 13:35:05,339 INFO aiogram.event MainThread : Update id=692520811 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 13:35:06,290 INFO aiogram.event MainThread : Update id=692520812 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 13:35:12,749 INFO aiogram.event MainThread : Update id=692520813 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 13:35:15,878 INFO aiogram.event MainThread : Update id=692520814 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 13:35:18,320 INFO aiogram.event MainThread : Update id=692520815 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 13:35:20,257 INFO aiogram.event MainThread : Update id=692520816 is handled. Duration 156 ms by bot id=7395504801
+2024-06-17 13:35:23,127 INFO aiogram.event MainThread : Update id=692520817 is handled. Duration 140 ms by bot id=7395504801
+2024-06-17 13:35:35,321 ERROR root MainThread : (pymysql.err.DataError) (1406, "Data too long for column 'address' at row 1")
+[SQL: INSERT INTO `Order` (client_id, employee_id, food_id, name, type, date, price, address, status, deliver_date) VALUES (%(client_id)s, %(employee_id)s, %(food_id)s, %(name)s, %(type)s, %(date)s, %(price)s, %(address)s, %(status)s, %(deliver_date)s)]
+[parameters: {'client_id': '1', 'employee_id': '1', 'food_id': '2', 'name': 'Пицца гавайская', 'type': 'delivery', 'date': datetime.datetime(2024, 6, 17, 13, 30, 58, 855117), 'price': '600', 'address': 'адмиралтейская набережная, д 15', 'status': 'Created', 'deliver_date': None}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-06-17 13:35:35,321 INFO aiogram.event MainThread : Update id=692520818 is handled. Duration 92 ms by bot id=7395504801
+2024-06-17 13:36:00,665 INFO aiogram.event MainThread : Update id=692520819 is handled. Duration 358 ms by bot id=7395504801
+2024-06-17 13:36:01,842 INFO aiogram.event MainThread : Update id=692520820 is handled. Duration 156 ms by bot id=7395504801
+2024-06-17 13:36:03,062 INFO aiogram.event MainThread : Update id=692520821 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:36:05,350 INFO aiogram.event MainThread : Update id=692520822 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 13:36:14,626 INFO aiogram.event MainThread : Update id=692520823 is handled. Duration 94 ms by bot id=7395504801
+2024-06-17 13:36:18,193 INFO aiogram.event MainThread : Update id=692520824 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 13:36:19,071 INFO aiogram.event MainThread : Update id=692520825 is handled. Duration 186 ms by bot id=7395504801
+2024-06-17 13:36:19,717 INFO aiogram.event MainThread : Update id=692520826 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 13:36:22,486 INFO aiogram.event MainThread : Update id=692520827 is handled. Duration 79 ms by bot id=7395504801
+2024-06-17 13:36:35,153 INFO aiogram.event MainThread : Update id=692520828 is handled. Duration 155 ms by bot id=7395504801
+2024-06-17 13:36:37,478 INFO aiogram.event MainThread : Update id=692520829 is handled. Duration 313 ms by bot id=7395504801
+2024-06-17 13:36:38,646 INFO aiogram.event MainThread : Update id=692520830 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 13:36:39,624 INFO aiogram.event MainThread : Update id=692520831 is handled. Duration 156 ms by bot id=7395504801
+2024-06-17 13:36:40,745 INFO aiogram.event MainThread : Update id=692520832 is handled. Duration 187 ms by bot id=7395504801
+2024-06-17 13:36:46,047 DEBUG root MainThread : ['id', 'client_id', 'employee_id', 'food_id', 'name', 'type', 'date', 'price', 'address', 'status', 'deliver_date']
+2024-06-17 13:36:46,182 INFO aiogram.event MainThread : Update id=692520833 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:36:56,332 INFO aiogram.event MainThread : Update id=692520834 is handled. Duration 172 ms by bot id=7395504801
+2024-06-17 13:37:04,708 INFO aiogram.event MainThread : Update id=692520835 is handled. Duration 61 ms by bot id=7395504801
+2024-06-17 13:37:08,073 INFO aiogram.event MainThread : Update id=692520836 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 13:37:09,299 INFO aiogram.event MainThread : Update id=692520837 is handled. Duration 186 ms by bot id=7395504801
+2024-06-17 13:37:11,967 INFO aiogram.event MainThread : Update id=692520838 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:37:13,213 INFO aiogram.event MainThread : Update id=692520839 is handled. Duration 218 ms by bot id=7395504801
+2024-06-17 13:37:14,860 INFO aiogram.event MainThread : Update id=692520840 is handled. Duration 79 ms by bot id=7395504801
+2024-06-17 13:37:15,547 DEBUG root MainThread : ['id', 'client_id', 'employee_id', 'food_id', 'name', 'type', 'date', 'price', 'address', 'status', 'deliver_date']
+2024-06-17 13:37:15,651 INFO aiogram.event MainThread : Update id=692520841 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 13:37:30,782 INFO aiogram.event MainThread : Update id=692520842 is handled. Duration 311 ms by bot id=7395504801
+2024-06-17 13:37:31,852 INFO aiogram.event MainThread : Update id=692520843 is handled. Duration 109 ms by bot id=7395504801
+2024-06-17 13:37:33,059 INFO aiogram.event MainThread : Update id=692520844 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 13:37:34,851 INFO aiogram.event MainThread : Update id=692520845 is handled. Duration 109 ms by bot id=7395504801
+2024-06-17 13:37:35,882 DEBUG root MainThread : ['id', 'telegram_id', 'name', 'phone']
+2024-06-17 13:37:36,049 INFO aiogram.event MainThread : Update id=692520846 is handled. Duration 171 ms by bot id=7395504801
+2024-06-17 13:37:47,130 INFO aiogram.event MainThread : Update id=692520847 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 13:37:49,899 INFO aiogram.event MainThread : Update id=692520848 is handled. Duration 155 ms by bot id=7395504801
+2024-06-17 13:37:51,060 INFO aiogram.event MainThread : Update id=692520849 is handled. Duration 171 ms by bot id=7395504801
+2024-06-17 13:37:57,934 INFO aiogram.event MainThread : Update id=692520850 is handled. Duration 312 ms by bot id=7395504801
+2024-06-17 13:42:18,520 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 13:42:18,776 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 13:51:29,396 ERROR asyncio MainThread : Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000026C2FB28530>
+2024-06-17 13:51:52,997 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 13:51:53,048 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 13:51:53,386 INFO aiogram.event MainThread : Update id=692520852 is handled. Duration 281 ms by bot id=7395504801
+2024-06-17 13:51:53,411 INFO aiogram.event MainThread : Update id=692520851 is handled. Duration 295 ms by bot id=7395504801
+2024-06-17 13:51:58,181 INFO aiogram.event MainThread : Update id=692520853 is handled. Duration 171 ms by bot id=7395504801
+2024-06-17 13:52:01,587 INFO aiogram.event MainThread : Update id=692520854 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 13:52:03,058 INFO aiogram.event MainThread : Update id=692520855 is handled. Duration 157 ms by bot id=7395504801
+2024-06-17 13:52:04,195 INFO aiogram.event MainThread : Update id=692520856 is handled. Duration 140 ms by bot id=7395504801
+2024-06-17 13:52:07,550 INFO aiogram.event MainThread : Update id=692520857 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 13:52:09,472 ERROR root MainThread : time data '123123123123' does not match format '%d.%m.%Y'
+2024-06-17 13:52:09,472 INFO aiogram.event MainThread : Update id=692520858 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 13:53:13,494 INFO aiogram.event MainThread : Update id=692520859 is handled. Duration 375 ms by bot id=7395504801
+2024-06-17 13:53:14,461 INFO aiogram.event MainThread : Update id=692520860 is handled. Duration 233 ms by bot id=7395504801
+2024-06-17 13:53:15,605 INFO aiogram.event MainThread : Update id=692520861 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 13:53:21,009 INFO aiogram.event MainThread : Update id=692520862 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:53:24,950 DEBUG root MainThread : 2024-06-12
+2024-06-17 13:53:24,951 DEBUG root MainThread : 2024-06-18
+2024-06-17 13:53:24,953 DEBUG root MainThread : (1350.0,)
+2024-06-17 13:53:25,135 INFO aiogram.event MainThread : Update id=692520863 is handled. Duration 188 ms by bot id=7395504801
+2024-06-17 13:54:26,914 INFO aiogram.event MainThread : Update id=692520864 is handled. Duration 358 ms by bot id=7395504801
+2024-06-17 13:54:27,673 INFO aiogram.event MainThread : Update id=692520865 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 13:54:28,687 INFO aiogram.event MainThread : Update id=692520866 is handled. Duration 171 ms by bot id=7395504801
+2024-06-17 13:54:33,203 INFO aiogram.event MainThread : Update id=692520867 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 13:54:34,789 ERROR root MainThread : time data '1312321321' does not match format '%d.%m.%Y'
+2024-06-17 13:54:34,789 INFO aiogram.event MainThread : Update id=692520868 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 13:55:09,482 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 13:55:09,743 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 13:55:14,693 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 13:55:14,748 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 13:55:15,905 INFO aiogram.event MainThread : Update id=692520869 is handled. Duration 280 ms by bot id=7395504801
+2024-06-17 13:55:17,745 INFO aiogram.event MainThread : Update id=692520870 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 13:55:19,191 INFO aiogram.event MainThread : Update id=692520871 is handled. Duration 109 ms by bot id=7395504801
+2024-06-17 13:55:22,737 INFO aiogram.event MainThread : Update id=692520872 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:55:24,691 INFO aiogram.event MainThread : Update id=692520873 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 13:55:26,169 INFO aiogram.event MainThread : Update id=692520874 is handled. Duration 171 ms by bot id=7395504801
+2024-06-17 13:55:27,146 INFO aiogram.event MainThread : Update id=692520875 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 13:55:31,928 DEBUG root MainThread : 2024-06-12
+2024-06-17 13:55:31,928 DEBUG root MainThread : 2024-06-18
+2024-06-17 13:55:31,954 DEBUG root MainThread : (1350.0,)
+2024-06-17 13:55:32,053 INFO aiogram.event MainThread : Update id=692520876 is handled. Duration 141 ms by bot id=7395504801

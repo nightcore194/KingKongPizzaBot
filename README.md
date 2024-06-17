@@ -24,7 +24,7 @@ MAKE MIGRATIONS IN *bot*
 
 ----
 
-all models is mapped in bot/models.py
+all models is mapped in models.py
 
 # BOT
 
