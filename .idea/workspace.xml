@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b325b5d9-de6f-4296-8159-02330246da86" name="Changes" comment="head">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/modules/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/modules/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot/modules/report.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/modules/report.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/bot.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/bot.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +105,8 @@
       <workItem from="1718553358533" duration="25061000" />
       <workItem from="1718584503656" duration="70000" />
       <workItem from="1718616348148" duration="455000" />
-      <workItem from="1718618290733" duration="3359000" />
+      <workItem from="1718618290733" duration="4853000" />
+      <workItem from="1718624951575" duration="122000" />
     </task>
     <task id="LOCAL-00001" summary="head">
       <option name="closed" value="true" />
@@ -129,6 +127,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="head" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/KingKongPizzaBot$long_pool.coverage" NAME="long_pool Coverage Results" MODIFIED="1718621510526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/KingKongPizzaBot$long_pool.coverage" NAME="long_pool Coverage Results" MODIFIED="1718621711116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

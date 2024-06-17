@@ -36,9 +36,13 @@ async def client_menu(callback: CallbackQuery) -> None:
 @router.callback_query(F.data.startswith("order_"))
 async def order_info(callback: CallbackQuery) -> None:
     order_type = callback.data.split('_')[1]
-    kb = [[InlineKeyboardButton(text='Создание заказа', callback_data=f'create_Order_{order_type}'),
-           InlineKeyboardButton(text='Посмотреть заказы', callback_data=f'check_Order_{order_type}')],
-          [InlineKeyboardButton(text="В меню", callback_data='go_back')]]
+    if isAdmin(callback.from_user.id):
+        kb = [[InlineKeyboardButton(text='Создание заказа', callback_data=f'create_Order_{order_type}'),
+               InlineKeyboardButton(text='Посмотреть заказы', callback_data=f'check_Order_{order_type}')],
+              [InlineKeyboardButton(text="В меню", callback_data='go_back')]]
+    else:
+        kb = [[InlineKeyboardButton(text='Посмотреть заказы', callback_data=f'check_Order_{order_type}')],
+              [InlineKeyboardButton(text="В меню", callback_data='go_back')]]
     markup = InlineKeyboardMarkup(inline_keyboard=kb)
     await bot.send_message(callback.from_user.id, "Что вы хотите сделать?", reply_markup=markup)
 

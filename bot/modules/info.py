@@ -1,6 +1,7 @@
 from aiogram import F, Router
 from aiogram.types import CallbackQuery
 from aiogram.utils.keyboard import InlineKeyboardMarkup, InlineKeyboardButton
+from bot.validation import isAdmin
 from bot.bot import bot
 
 router = Router()
@@ -19,8 +20,11 @@ async def admin_info(callback: CallbackQuery) -> None:
 async def food_catalog(callback: CallbackQuery) -> None:
     destination = callback.data.split("_")[1]
     if destination == "techmap":
-        kb = [[InlineKeyboardButton(text='Создание рецепта', callback_data=f'create_Recipe'),
-               InlineKeyboardButton(text='Посмотреть рецепты', callback_data=f'check_Recipe')]]
+        if isAdmin(callback.from_user.id):
+            kb = [[InlineKeyboardButton(text='Создание рецепта', callback_data=f'create_Recipe'),
+                   InlineKeyboardButton(text='Посмотреть рецепты', callback_data=f'check_Recipe')]]
+        else:
+            kb = [[InlineKeyboardButton(text='Посмотреть рецепты', callback_data=f'check_Recipe')]]
     else:
         kb = [[InlineKeyboardButton(text='Создание блюда', callback_data=f'create_Food'),
                InlineKeyboardButton(text='Посмотреть блюда', callback_data=f'check_Food')]]
