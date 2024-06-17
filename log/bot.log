@@ -1,0 +1,653 @@
+2024-06-17 02:42:33,444 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 02:42:33,499 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:42:36,150 INFO aiogram.event MainThread : Update id=692520531 is handled. Duration 280 ms by bot id=7395504801
+2024-06-17 02:43:02,635 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 02:43:02,892 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:43:06,666 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 02:43:06,726 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:44:29,263 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 02:44:29,525 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:44:33,243 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 02:44:33,297 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:44:35,257 INFO aiogram.event MainThread : Update id=692520532 is handled. Duration 280 ms by bot id=7395504801
+2024-06-17 02:44:36,621 INFO aiogram.event MainThread : Update id=692520533 is handled. Duration 94 ms by bot id=7395504801
+2024-06-17 02:44:37,423 INFO aiogram.event MainThread : Update id=692520534 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 02:44:38,165 INFO aiogram.event MainThread : Update id=692520535 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 02:44:59,537 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 02:44:59,787 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:45:03,229 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 02:45:03,283 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:45:04,949 INFO aiogram.event MainThread : Update id=692520536 is handled. Duration 264 ms by bot id=7395504801
+2024-06-17 02:45:09,906 INFO aiogram.event MainThread : Update id=692520537 is handled. Duration 92 ms by bot id=7395504801
+2024-06-17 02:45:11,913 INFO aiogram.event MainThread : Update id=692520538 is handled. Duration 187 ms by bot id=7395504801
+2024-06-17 02:45:17,754 INFO aiogram.event MainThread : Update id=692520539 is not handled. Duration 0 ms by bot id=7395504801
+2024-06-17 02:45:38,211 INFO aiogram.event MainThread : Update id=692520540 is handled. Duration 203 ms by bot id=7395504801
+2024-06-17 02:45:39,873 INFO aiogram.event MainThread : Update id=692520541 is handled. Duration 140 ms by bot id=7395504801
+2024-06-17 02:45:57,250 INFO aiogram.event MainThread : Update id=692520542 is not handled. Duration 0 ms by bot id=7395504801
+2024-06-17 02:46:06,678 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 02:46:06,954 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:46:10,516 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 02:46:10,569 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:46:13,964 INFO aiogram.event MainThread : Update id=692520543 is handled. Duration 266 ms by bot id=7395504801
+2024-06-17 02:46:15,523 INFO aiogram.event MainThread : Update id=692520544 is not handled. Duration 30 ms by bot id=7395504801
+2024-06-17 02:46:15,524 ERROR aiogram.event MainThread : Cause exception while process update id=692520544 by bot id=7395504801
+AttributeError: 'NoneType' object has no attribute 'from_user'
+Traceback (most recent call last):
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\bot\modules\report.py", line 32, in analyze
+    f"Сумма продаж за весь период - {int(result.sum_price)}", reply_markup=markup)
+                                     ^^^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 29, in __call__
+    response = await self.router.propagate_event(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\bot\bot.py", line 36, in error_handler
+    await bot.send_message(chat_id=event.update.message.from_user.id, text="Произошла ошибка!",
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'from_user'
+2024-06-17 02:46:35,674 ERROR aiogram.dispatcher MainThread : Failed to fetch updates - TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'GetUpdates'. Retry in 5 seconds.
+Original description: Too Many Requests: retry after 5
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-06-17 02:46:35,674 WARNING aiogram.dispatcher MainThread : Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7395504801)
+2024-06-17 02:46:36,731 ERROR aiogram.dispatcher MainThread : Failed to fetch updates - TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'GetUpdates'. Retry in 5 seconds.
+Original description: Too Many Requests: retry after 5
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-06-17 02:46:36,731 WARNING aiogram.dispatcher MainThread : Sleep for 1.415960 seconds and try again... (tryings = 1, bot id = 7395504801)
+2024-06-17 02:46:38,213 ERROR aiogram.dispatcher MainThread : Failed to fetch updates - TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'GetUpdates'. Retry in 5 seconds.
+Original description: Too Many Requests: retry after 5
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-06-17 02:46:38,213 WARNING aiogram.dispatcher MainThread : Sleep for 1.960900 seconds and try again... (tryings = 2, bot id = 7395504801)
+2024-06-17 02:46:40,396 ERROR aiogram.dispatcher MainThread : Failed to fetch updates - TelegramServerError: Telegram server says - Bad Gateway
+2024-06-17 02:46:40,396 WARNING aiogram.dispatcher MainThread : Sleep for 2.714022 seconds and try again... (tryings = 3, bot id = 7395504801)
+2024-06-17 02:47:09,276 INFO aiogram.dispatcher MainThread : Connection established (tryings = 4, bot id = 7395504801)
+2024-06-17 02:47:14,032 INFO aiogram.event MainThread : Update id=692520545 is handled. Duration 187 ms by bot id=7395504801
+2024-06-17 02:47:15,284 INFO aiogram.event MainThread : Update id=692520546 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 02:47:16,338 INFO aiogram.event MainThread : Update id=692520547 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 02:47:17,948 INFO aiogram.event MainThread : Update id=692520548 is not handled. Duration 14 ms by bot id=7395504801
+2024-06-17 02:47:17,948 ERROR aiogram.event MainThread : Cause exception while process update id=692520548 by bot id=7395504801
+AttributeError: 'NoneType' object has no attribute 'from_user'
+Traceback (most recent call last):
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\bot\modules\report.py", line 32, in analyze
+    f"Сумма продаж за весь период - {int(result.sum_price)}", reply_markup=markup)
+                                     ^^^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 29, in __call__
+    response = await self.router.propagate_event(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\bot\bot.py", line 36, in error_handler
+    await bot.send_message(chat_id=event.update.message.from_user.id, text="Произошла ошибка!",
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'from_user'
+2024-06-17 02:48:40,389 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 02:48:40,654 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:50:10,452 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 02:50:10,518 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:50:15,533 INFO aiogram.event MainThread : Update id=692520549 is handled. Duration 233 ms by bot id=7395504801
+2024-06-17 02:50:38,040 INFO aiogram.event MainThread : Update id=692520550 is handled. Duration 375 ms by bot id=7395504801
+2024-06-17 02:50:38,900 INFO aiogram.event MainThread : Update id=692520551 is handled. Duration 140 ms by bot id=7395504801
+2024-06-17 02:50:39,944 INFO aiogram.event MainThread : Update id=692520552 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 02:51:01,127 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 02:51:01,388 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:51:04,965 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 02:51:05,027 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:51:05,369 INFO aiogram.event MainThread : Update id=692520553 is handled. Duration 281 ms by bot id=7395504801
+2024-06-17 02:51:06,528 INFO aiogram.event MainThread : Update id=692520554 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 02:51:07,497 ERROR root MainThread : update=Update(update_id=692520555, message=None, edited_message=None, channel_post=None, edited_channel_post=None, business_connection=None, business_message=None, edited_business_message=None, deleted_business_messages=None, message_reaction=None, message_reaction_count=None, inline_query=None, chosen_inline_result=None, callback_query=CallbackQuery(id='4238348934370531589', from_user=User(id=986817510, is_bot=False, first_name='Artem', last_name=None, username='n1ghtcore194', language_code='ru', is_premium=True, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None, can_connect_to_business=None), chat_instance='8645056718523330025', message=Message(message_id=28, date=datetime.datetime(2024, 6, 16, 23, 51, 5, tzinfo=TzInfo(UTC)), chat=Chat(id=986817510, type='private', title=None, username='n1ghtcore194', first_name='Artem', last_name=None, is_forum=None, photo=None, active_usernames=None, birthdate=None, business_intro=None, business_location=None, business_opening_hours=None, personal_chat=None, available_reactions=None, accent_color_id=None, background_custom_emoji_id=None, profile_accent_color_id=None, profile_background_custom_emoji_id=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, unrestrict_boost_count=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, has_visible_history=None, sticker_set_name=None, can_set_sticker_set=None, custom_emoji_sticker_set_name=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=7395504801, is_bot=True, first_name='test_bot', last_name=None, username='test_king_kong_pizza_bot', language_code=None, is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None, can_connect_to_business=None), sender_chat=None, sender_boost_count=None, sender_business_bot=None, business_connection_id=None, forward_origin=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, external_reply=None, quote=None, reply_to_story=None, via_bot=None, edit_date=None, has_protected_content=None, is_from_offline=None, media_group_id=None, author_signature=None, text='Что вы хотите сделать?', entities=None, link_preview_options=None, animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, users_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, boost_added=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, giveaway_created=None, giveaway=None, giveaway_winners=None, giveaway_completed=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='Анализ продаж за весь период', url=None, callback_data='analyze_all', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None), InlineKeyboardButton(text='Анализ продаж за конкретный период', url=None, callback_data='analyze_period', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='В меню', url=None, callback_data='go_back', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]]), forward_date=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_sender_name=None, forward_signature=None, user_shared=None), inline_message_id=None, data='analyze_all', game_short_name=None), shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None, chat_boost=None, removed_chat_boost=None) exception=TypeError("int() argument must be a string, a bytes-like object or a real number, not 'NoneType'")
+2024-06-17 02:51:07,498 INFO aiogram.event MainThread : Update id=692520555 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 02:52:14,093 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 02:52:14,347 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:52:18,197 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 02:52:18,245 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:52:20,009 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 02:52:20,266 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:53:55,016 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 02:53:55,065 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:53:58,570 INFO aiogram.event MainThread : Update id=692520556 is handled. Duration 389 ms by bot id=7395504801
+2024-06-17 02:53:59,877 INFO aiogram.event MainThread : Update id=692520557 is handled. Duration 156 ms by bot id=7395504801
+2024-06-17 02:54:01,761 INFO aiogram.event MainThread : Update id=692520558 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 02:54:03,735 INFO aiogram.event MainThread : Update id=692520559 is handled. Duration 157 ms by bot id=7395504801
+2024-06-17 02:54:07,078 INFO aiogram.event MainThread : Update id=692520560 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 02:54:08,155 INFO aiogram.event MainThread : Update id=692520561 is not handled. Duration 0 ms by bot id=7395504801
+2024-06-17 02:54:25,274 INFO aiogram.event MainThread : Update id=692520562 is not handled. Duration 15 ms by bot id=7395504801
+2024-06-17 02:54:31,475 INFO aiogram.event MainThread : Update id=692520563 is handled. Duration 203 ms by bot id=7395504801
+2024-06-17 02:54:32,822 INFO aiogram.event MainThread : Update id=692520564 is not handled. Duration 0 ms by bot id=7395504801
+2024-06-17 02:54:44,321 INFO aiogram.event MainThread : Update id=692520565 is handled. Duration 155 ms by bot id=7395504801
+2024-06-17 02:55:04,873 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 02:55:05,133 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:55:09,018 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 02:55:09,075 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:55:09,425 INFO aiogram.event MainThread : Update id=692520566 is handled. Duration 281 ms by bot id=7395504801
+2024-06-17 02:55:10,392 INFO aiogram.event MainThread : Update id=692520567 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 02:55:39,950 INFO aiogram.event MainThread : Update id=692520568 is not handled. Duration 0 ms by bot id=7395504801
+2024-06-17 02:55:49,854 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 02:55:50,003 ERROR aiogram.dispatcher MainThread : Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2685)
+2024-06-17 02:55:50,003 WARNING aiogram.dispatcher MainThread : Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7395504801)
+2024-06-17 02:55:50,128 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:55:54,336 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 02:55:54,393 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:55:58,171 INFO aiogram.event MainThread : Update id=692520569 is not handled. Duration 0 ms by bot id=7395504801
+2024-06-17 02:56:18,213 INFO aiogram.event MainThread : Update id=692520570 is handled. Duration 250 ms by bot id=7395504801
+2024-06-17 02:56:21,994 INFO aiogram.event MainThread : Update id=692520571 is handled. Duration 140 ms by bot id=7395504801
+2024-06-17 02:56:34,910 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 02:56:35,153 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:56:38,997 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 02:56:39,054 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:56:44,131 INFO aiogram.event MainThread : Update id=692520572 is handled. Duration 280 ms by bot id=7395504801
+2024-06-17 02:56:45,481 INFO aiogram.event MainThread : Update id=692520573 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 02:56:47,607 INFO aiogram.event MainThread : Update id=692520574 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 02:56:54,291 INFO aiogram.event MainThread : Update id=692520575 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 02:56:58,698 INFO aiogram.event MainThread : Update id=692520576 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 02:57:08,912 INFO aiogram.event MainThread : Update id=692520577 is handled. Duration 155 ms by bot id=7395504801
+2024-06-17 02:57:12,428 INFO aiogram.event MainThread : Update id=692520578 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 02:57:14,030 INFO aiogram.event MainThread : Update id=692520579 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 02:57:16,048 INFO aiogram.event MainThread : Update id=692520580 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 02:57:18,086 INFO aiogram.event MainThread : Update id=692520581 is handled. Duration 218 ms by bot id=7395504801
+2024-06-17 02:57:19,195 INFO aiogram.event MainThread : Update id=692520582 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 02:57:21,374 INFO aiogram.event MainThread : Update id=692520583 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 02:57:25,429 INFO aiogram.event MainThread : Update id=692520584 is handled. Duration 110 ms by bot id=7395504801
+2024-06-17 02:57:26,470 INFO aiogram.event MainThread : Update id=692520585 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 02:58:06,663 INFO aiogram.event MainThread : Update id=692520586 is not handled. Duration 16 ms by bot id=7395504801
+2024-06-17 02:58:06,663 ERROR aiogram.event MainThread : Cause exception while process update id=692520586 by bot id=7395504801
+AttributeError: 'NoneType' object has no attribute 'from_user'
+Traceback (most recent call last):
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\bot\modules\admin.py", line 159, in input_employee
+    db.add(eval(class_name)(**data))
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 4, in __init__
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\sqlalchemy\orm\state.py", line 564, in _initialize_instance
+    with util.safe_reraise():
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\sqlalchemy\orm\state.py", line 562, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\sqlalchemy\orm\decl_base.py", line 2139, in _declarative_constructor
+    raise TypeError(
+TypeError: 'class_name' is an invalid keyword argument for Recipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 29, in __call__
+    response = await self.router.propagate_event(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\night\PycharmProjects\KingKongPizzaBot\bot\bot.py", line 38, in error_handler
+    await bot.send_message(chat_id=event.update.callback_query.from_user.id, text="Произошла ошибка!",
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'from_user'
+2024-06-17 02:58:59,020 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 02:58:59,284 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:59:03,412 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 02:59:03,462 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 02:59:09,255 INFO aiogram.event MainThread : Update id=692520587 is handled. Duration 234 ms by bot id=7395504801
+2024-06-17 02:59:16,469 ERROR root MainThread : update=Update(update_id=692520588, message=Message(message_id=59, date=datetime.datetime(2024, 6, 16, 23, 59, 15, tzinfo=TzInfo(UTC)), chat=Chat(id=986817510, type='private', title=None, username='n1ghtcore194', first_name='Artem', last_name=None, is_forum=None, photo=None, active_usernames=None, birthdate=None, business_intro=None, business_location=None, business_opening_hours=None, personal_chat=None, available_reactions=None, accent_color_id=None, background_custom_emoji_id=None, profile_accent_color_id=None, profile_background_custom_emoji_id=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, unrestrict_boost_count=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, has_visible_history=None, sticker_set_name=None, can_set_sticker_set=None, custom_emoji_sticker_set_name=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=986817510, is_bot=False, first_name='Artem', last_name=None, username='n1ghtcore194', language_code='ru', is_premium=True, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None, can_connect_to_business=None), sender_chat=None, sender_boost_count=None, sender_business_bot=None, business_connection_id=None, forward_origin=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, external_reply=None, quote=None, reply_to_story=None, via_bot=None, edit_date=None, has_protected_content=None, is_from_offline=None, media_group_id=None, author_signature=None, text='Пицца 4 сыра:\n1. Добавьте пиццу\n2. Добавьте сыр', entities=None, link_preview_options=None, animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, users_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, boost_added=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, giveaway_created=None, giveaway=None, giveaway_winners=None, giveaway_completed=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=None, forward_date=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_sender_name=None, forward_signature=None, user_shared=None), edited_message=None, channel_post=None, edited_channel_post=None, business_connection=None, business_message=None, edited_business_message=None, deleted_business_messages=None, message_reaction=None, message_reaction_count=None, inline_query=None, chosen_inline_result=None, callback_query=None, shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None, chat_boost=None, removed_chat_boost=None) exception=TypeError("'class_name' is an invalid keyword argument for Recipe")
+2024-06-17 02:59:16,469 INFO aiogram.event MainThread : Update id=692520588 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:00:34,074 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:00:34,328 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:00:48,356 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:00:48,417 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:00:55,298 INFO aiogram.event MainThread : Update id=692520589 is handled. Duration 250 ms by bot id=7395504801
+2024-06-17 03:00:59,575 INFO aiogram.event MainThread : Update id=692520590 is handled. Duration 139 ms by bot id=7395504801
+2024-06-17 03:01:01,454 INFO aiogram.event MainThread : Update id=692520591 is handled. Duration 155 ms by bot id=7395504801
+2024-06-17 03:01:02,398 INFO aiogram.event MainThread : Update id=692520592 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:01:03,800 INFO aiogram.event MainThread : Update id=692520593 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:01:04,950 INFO aiogram.event MainThread : Update id=692520594 is handled. Duration 217 ms by bot id=7395504801
+2024-06-17 03:01:05,698 ERROR root MainThread : update=Update(update_id=692520595, message=None, edited_message=None, channel_post=None, edited_channel_post=None, business_connection=None, business_message=None, edited_business_message=None, deleted_business_messages=None, message_reaction=None, message_reaction_count=None, inline_query=None, chosen_inline_result=None, callback_query=CallbackQuery(id='4238348936782697307', from_user=User(id=986817510, is_bot=False, first_name='Artem', last_name=None, username='n1ghtcore194', language_code='ru', is_premium=True, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None, can_connect_to_business=None), chat_instance='8645056718523330025', message=Message(message_id=67, date=datetime.datetime(2024, 6, 17, 0, 1, 4, tzinfo=TzInfo(UTC)), chat=Chat(id=986817510, type='private', title=None, username='n1ghtcore194', first_name='Artem', last_name=None, is_forum=None, photo=None, active_usernames=None, birthdate=None, business_intro=None, business_location=None, business_opening_hours=None, personal_chat=None, available_reactions=None, accent_color_id=None, background_custom_emoji_id=None, profile_accent_color_id=None, profile_background_custom_emoji_id=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, unrestrict_boost_count=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, has_visible_history=None, sticker_set_name=None, can_set_sticker_set=None, custom_emoji_sticker_set_name=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=7395504801, is_bot=True, first_name='test_bot', last_name=None, username='test_king_kong_pizza_bot', language_code=None, is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None, can_connect_to_business=None), sender_chat=None, sender_boost_count=None, sender_business_bot=None, business_connection_id=None, forward_origin=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, external_reply=None, quote=None, reply_to_story=None, via_bot=None, edit_date=None, has_protected_content=None, is_from_offline=None, media_group_id=None, author_signature=None, text='Что вы хотите сделать?', entities=None, link_preview_options=None, animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, users_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, boost_added=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, giveaway_created=None, giveaway=None, giveaway_winners=None, giveaway_completed=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='Создание рецепта', url=None, callback_data='create_Recipe', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None), InlineKeyboardButton(text='Посмотреть рецепты', url=None, callback_data='check_Recipe', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='В меню', url=None, callback_data='go_back', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]]), forward_date=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_sender_name=None, forward_signature=None, user_shared=None), inline_message_id=None, data='check_Recipe', game_short_name=None), shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None, chat_boost=None, removed_chat_boost=None) exception=AttributeError("'NoneType' object has no attribute 'name'")
+2024-06-17 03:01:05,698 INFO aiogram.event MainThread : Update id=692520595 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 03:02:09,143 ERROR root MainThread : update=Update(update_id=692520596, message=None, edited_message=None, channel_post=None, edited_channel_post=None, business_connection=None, business_message=None, edited_business_message=None, deleted_business_messages=None, message_reaction=None, message_reaction_count=None, inline_query=None, chosen_inline_result=None, callback_query=CallbackQuery(id='4238348935699717220', from_user=User(id=986817510, is_bot=False, first_name='Artem', last_name=None, username='n1ghtcore194', language_code='ru', is_premium=True, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None, can_connect_to_business=None), chat_instance='8645056718523330025', message=Message(message_id=67, date=datetime.datetime(2024, 6, 17, 0, 1, 4, tzinfo=TzInfo(UTC)), chat=Chat(id=986817510, type='private', title=None, username='n1ghtcore194', first_name='Artem', last_name=None, is_forum=None, photo=None, active_usernames=None, birthdate=None, business_intro=None, business_location=None, business_opening_hours=None, personal_chat=None, available_reactions=None, accent_color_id=None, background_custom_emoji_id=None, profile_accent_color_id=None, profile_background_custom_emoji_id=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, unrestrict_boost_count=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, has_visible_history=None, sticker_set_name=None, can_set_sticker_set=None, custom_emoji_sticker_set_name=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=7395504801, is_bot=True, first_name='test_bot', last_name=None, username='test_king_kong_pizza_bot', language_code=None, is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None, can_connect_to_business=None), sender_chat=None, sender_boost_count=None, sender_business_bot=None, business_connection_id=None, forward_origin=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, external_reply=None, quote=None, reply_to_story=None, via_bot=None, edit_date=None, has_protected_content=None, is_from_offline=None, media_group_id=None, author_signature=None, text='Что вы хотите сделать?', entities=None, link_preview_options=None, animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, users_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, boost_added=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, giveaway_created=None, giveaway=None, giveaway_winners=None, giveaway_completed=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='Создание рецепта', url=None, callback_data='create_Recipe', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None), InlineKeyboardButton(text='Посмотреть рецепты', url=None, callback_data='check_Recipe', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)], [InlineKeyboardButton(text='В меню', url=None, callback_data='go_back', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]]), forward_date=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_sender_name=None, forward_signature=None, user_shared=None), inline_message_id=None, data='check_Recipe', game_short_name=None), shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None, chat_boost=None, removed_chat_boost=None) exception=AttributeError("'NoneType' object has no attribute 'name'")
+2024-06-17 03:02:09,143 INFO aiogram.event MainThread : Update id=692520596 is handled. Duration 171 ms by bot id=7395504801
+2024-06-17 03:02:20,291 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:02:20,557 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:02:24,129 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:02:24,188 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:02:24,734 ERROR root MainThread : 'NoneType' object has no attribute 'name'
+2024-06-17 03:02:24,734 INFO aiogram.event MainThread : Update id=692520597 is handled. Duration 296 ms by bot id=7395504801
+2024-06-17 03:03:02,289 ERROR root MainThread : 'NoneType' object has no attribute 'name'
+2024-06-17 03:03:02,289 INFO aiogram.event MainThread : Update id=692520598 is handled. Duration 203 ms by bot id=7395504801
+2024-06-17 03:03:18,871 INFO aiogram.event MainThread : Update id=692520599 is handled. Duration 172 ms by bot id=7395504801
+2024-06-17 03:03:20,138 INFO aiogram.event MainThread : Update id=692520600 is handled. Duration 140 ms by bot id=7395504801
+2024-06-17 03:03:21,457 INFO aiogram.event MainThread : Update id=692520601 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:03:22,309 INFO aiogram.event MainThread : Update id=692520602 is handled. Duration 94 ms by bot id=7395504801
+2024-06-17 03:03:23,113 ERROR root MainThread : 'NoneType' object has no attribute 'name'
+2024-06-17 03:03:23,113 INFO aiogram.event MainThread : Update id=692520603 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:04:17,266 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:04:17,522 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:04:50,397 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:04:50,456 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:04:50,828 INFO aiogram.event MainThread : Update id=692520604 is handled. Duration 250 ms by bot id=7395504801
+2024-06-17 03:04:54,579 INFO aiogram.event MainThread : Update id=692520605 is handled. Duration 139 ms by bot id=7395504801
+2024-06-17 03:04:57,691 INFO aiogram.event MainThread : Update id=692520606 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:04:59,010 INFO aiogram.event MainThread : Update id=692520607 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 03:07:09,985 INFO aiogram.event MainThread : Update id=692520608 is not handled. Duration 130344 ms by bot id=7395504801
+2024-06-17 03:07:09,986 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:07:09,988 ERROR aiogram.dispatcher MainThread : Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2024-06-17 03:07:09,988 WARNING aiogram.dispatcher MainThread : Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7395504801)
+2024-06-17 03:07:24,870 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:07:24,919 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:07:25,689 INFO aiogram.event MainThread : Update id=692520609 is handled. Duration 312 ms by bot id=7395504801
+2024-06-17 03:07:26,905 INFO aiogram.event MainThread : Update id=692520610 is handled. Duration 92 ms by bot id=7395504801
+2024-06-17 03:07:27,725 INFO aiogram.event MainThread : Update id=692520611 is handled. Duration 157 ms by bot id=7395504801
+2024-06-17 03:07:28,617 INFO aiogram.event MainThread : Update id=692520612 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:07:31,047 INFO aiogram.event MainThread : Update id=692520613 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:07:33,685 INFO aiogram.event MainThread : Update id=692520614 is handled. Duration 157 ms by bot id=7395504801
+2024-06-17 03:07:39,844 INFO aiogram.event MainThread : Update id=692520615 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 03:07:42,089 INFO aiogram.event MainThread : Update id=692520616 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 03:07:43,662 INFO aiogram.event MainThread : Update id=692520617 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:07:45,927 INFO aiogram.event MainThread : Update id=692520618 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 03:07:52,835 INFO aiogram.event MainThread : Update id=692520619 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 03:07:54,374 INFO aiogram.event MainThread : Update id=692520620 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:07:55,110 INFO aiogram.event MainThread : Update id=692520621 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:07:56,241 ERROR root MainThread : No inspection system is available for object of type <class 'int'>
+2024-06-17 03:07:56,241 INFO aiogram.event MainThread : Update id=692520622 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:08:43,284 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:08:43,542 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:08:47,247 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:08:47,305 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:08:51,422 ERROR root MainThread : No inspection system is available for object of type <class 'int'>
+2024-06-17 03:08:51,422 INFO aiogram.event MainThread : Update id=692520623 is handled. Duration 219 ms by bot id=7395504801
+2024-06-17 03:11:22,003 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:11:22,097 ERROR aiogram.dispatcher MainThread : Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2685)
+2024-06-17 03:11:22,097 WARNING aiogram.dispatcher MainThread : Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7395504801)
+2024-06-17 03:11:22,262 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:11:26,300 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:11:26,349 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:11:29,041 INFO aiogram.event MainThread : Update id=692520624 is handled. Duration 281 ms by bot id=7395504801
+2024-06-17 03:11:30,817 ERROR root MainThread : No inspection system is available for object of type <class 'int'>
+2024-06-17 03:11:30,817 INFO aiogram.event MainThread : Update id=692520625 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:12:00,081 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:12:00,343 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:12:03,341 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:12:03,397 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:19:47,986 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:19:48,245 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:19:51,748 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:19:51,809 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:20:07,306 ERROR root MainThread : No inspection system is available for object of type <class 'int'>
+2024-06-17 03:20:07,306 INFO aiogram.event MainThread : Update id=692520626 is handled. Duration 344 ms by bot id=7395504801
+2024-06-17 03:20:40,138 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:20:40,390 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:20:43,658 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:20:43,714 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:21:09,058 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:21:09,323 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:21:12,375 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:21:12,423 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:21:15,920 ERROR root MainThread : list index out of range
+2024-06-17 03:21:15,920 INFO aiogram.event MainThread : Update id=692520627 is handled. Duration 233 ms by bot id=7395504801
+2024-06-17 03:21:32,221 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:21:32,480 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:21:35,474 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:21:35,537 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:21:39,736 ERROR root MainThread : list.remove(x): x not in list
+2024-06-17 03:21:39,736 INFO aiogram.event MainThread : Update id=692520628 is handled. Duration 234 ms by bot id=7395504801
+2024-06-17 03:22:07,672 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:22:07,927 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:22:11,297 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:22:11,357 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:22:28,445 DEBUG root MainThread : ['id', 'content']
+2024-06-17 03:22:28,697 ERROR root MainThread : list.remove(x): x not in list
+2024-06-17 03:22:28,697 INFO aiogram.event MainThread : Update id=692520629 is handled. Duration 264 ms by bot id=7395504801
+2024-06-17 03:22:50,475 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:22:50,727 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:22:54,415 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:22:54,479 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:22:58,268 DEBUG root MainThread : ['id', 'content']
+2024-06-17 03:22:58,502 INFO aiogram.event MainThread : Update id=692520630 is handled. Duration 234 ms by bot id=7395504801
+2024-06-17 03:23:30,611 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:23:30,876 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:23:33,947 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:23:34,004 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:23:34,097 DEBUG root MainThread : ['id', 'content']
+2024-06-17 03:23:34,328 INFO aiogram.event MainThread : Update id=692520631 is handled. Duration 250 ms by bot id=7395504801
+2024-06-17 03:23:43,482 INFO aiogram.event MainThread : Update id=692520632 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:23:52,591 ERROR root MainThread : 'id'
+2024-06-17 03:23:52,591 INFO aiogram.event MainThread : Update id=692520633 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:24:30,565 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:24:30,829 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:24:34,126 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:24:34,175 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:24:36,586 INFO aiogram.event MainThread : Update id=692520634 is handled. Duration 233 ms by bot id=7395504801
+2024-06-17 03:24:40,893 INFO aiogram.event MainThread : Update id=692520635 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 03:24:42,390 INFO aiogram.event MainThread : Update id=692520636 is handled. Duration 171 ms by bot id=7395504801
+2024-06-17 03:24:43,060 INFO aiogram.event MainThread : Update id=692520637 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:24:48,500 INFO aiogram.event MainThread : Update id=692520638 is handled. Duration 94 ms by bot id=7395504801
+2024-06-17 03:24:49,404 INFO aiogram.event MainThread : Update id=692520639 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:24:50,418 DEBUG root MainThread : ['id', 'content']
+2024-06-17 03:24:50,489 INFO aiogram.event MainThread : Update id=692520640 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:24:52,897 INFO aiogram.event MainThread : Update id=692520641 is handled. Duration 140 ms by bot id=7395504801
+2024-06-17 03:24:53,786 INFO aiogram.event MainThread : Update id=692520642 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:24:54,892 INFO aiogram.event MainThread : Update id=692520643 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 03:24:56,322 INFO aiogram.event MainThread : Update id=692520644 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 03:24:57,370 DEBUG root MainThread : ['id', 'name', 'price', 'recipe_id']
+2024-06-17 03:24:57,471 INFO aiogram.event MainThread : Update id=692520645 is handled. Duration 93 ms by bot id=7395504801
+2024-06-17 03:25:04,228 INFO aiogram.event MainThread : Update id=692520646 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:25:14,383 INFO aiogram.event MainThread : Update id=692520647 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 03:25:16,110 INFO aiogram.event MainThread : Update id=692520648 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 03:25:16,758 INFO aiogram.event MainThread : Update id=692520649 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 03:25:17,808 INFO aiogram.event MainThread : Update id=692520650 is handled. Duration 94 ms by bot id=7395504801
+2024-06-17 03:25:24,419 INFO aiogram.event MainThread : Update id=692520651 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:25:27,492 INFO aiogram.event MainThread : Update id=692520652 is handled. Duration 140 ms by bot id=7395504801
+2024-06-17 03:25:30,141 INFO aiogram.event MainThread : Update id=692520653 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 03:25:31,289 DEBUG root MainThread : ['id', 'name', 'price', 'recipe_id']
+2024-06-17 03:25:31,430 INFO aiogram.event MainThread : Update id=692520654 is handled. Duration 157 ms by bot id=7395504801
+2024-06-17 03:25:33,818 INFO aiogram.event MainThread : Update id=692520655 is handled. Duration 155 ms by bot id=7395504801
+2024-06-17 03:25:36,245 INFO aiogram.event MainThread : Update id=692520656 is handled. Duration 109 ms by bot id=7395504801
+2024-06-17 03:25:38,691 INFO aiogram.event MainThread : Update id=692520657 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:25:39,895 ERROR root MainThread : name 'Сlient' is not defined
+2024-06-17 03:25:39,895 INFO aiogram.event MainThread : Update id=692520658 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:26:06,856 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:26:07,109 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:26:10,264 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:26:10,321 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:26:10,633 ERROR root MainThread : name 'Сlient' is not defined
+2024-06-17 03:26:10,633 INFO aiogram.event MainThread : Update id=692520659 is handled. Duration 250 ms by bot id=7395504801
+2024-06-17 03:26:26,056 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:26:26,319 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:26:33,589 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:26:33,642 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:26:34,961 INFO aiogram.event MainThread : Update id=692520660 is handled. Duration 328 ms by bot id=7395504801
+2024-06-17 03:26:36,055 INFO aiogram.event MainThread : Update id=692520661 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:26:36,806 INFO aiogram.event MainThread : Update id=692520662 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:26:37,932 INFO aiogram.event MainThread : Update id=692520663 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:26:39,305 INFO aiogram.event MainThread : Update id=692520664 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 03:26:41,278 INFO aiogram.event MainThread : Update id=692520665 is handled. Duration 92 ms by bot id=7395504801
+2024-06-17 03:26:45,501 INFO aiogram.event MainThread : Update id=692520666 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:26:46,362 INFO aiogram.event MainThread : Update id=692520667 is not handled. Duration 0 ms by bot id=7395504801
+2024-06-17 03:27:07,926 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:27:08,179 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:27:11,201 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:27:11,257 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:27:11,326 INFO aiogram.event MainThread : Update id=692520668 is not handled. Duration 0 ms by bot id=7395504801
+2024-06-17 03:27:19,166 INFO aiogram.event MainThread : Update id=692520669 is handled. Duration 233 ms by bot id=7395504801
+2024-06-17 03:27:20,247 INFO aiogram.event MainThread : Update id=692520670 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 03:27:31,576 INFO aiogram.event MainThread : Update id=692520671 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:27:32,512 INFO aiogram.event MainThread : Update id=692520672 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 03:27:33,538 INFO aiogram.event MainThread : Update id=692520673 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:27:37,044 INFO aiogram.event MainThread : Update id=692520674 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:27:51,756 INFO aiogram.event MainThread : Update id=692520675 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 03:27:53,582 INFO aiogram.event MainThread : Update id=692520676 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 03:27:57,559 INFO aiogram.event MainThread : Update id=692520677 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:27:58,526 INFO aiogram.event MainThread : Update id=692520678 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:27:59,559 INFO aiogram.event MainThread : Update id=692520679 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:28:00,282 DEBUG root MainThread : ['id', 'telegram_id', 'name', 'phone']
+2024-06-17 03:28:00,351 INFO aiogram.event MainThread : Update id=692520680 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:28:15,764 INFO aiogram.event MainThread : Update id=692520681 is handled. Duration 250 ms by bot id=7395504801
+2024-06-17 03:28:17,078 INFO aiogram.event MainThread : Update id=692520682 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 03:28:21,971 INFO aiogram.event MainThread : Update id=692520683 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:28:23,299 INFO aiogram.event MainThread : Update id=692520684 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:28:24,826 INFO aiogram.event MainThread : Update id=692520685 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 03:28:30,148 INFO aiogram.event MainThread : Update id=692520686 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:28:32,433 INFO aiogram.event MainThread : Update id=692520687 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:28:33,734 INFO aiogram.event MainThread : Update id=692520688 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:28:35,138 INFO aiogram.event MainThread : Update id=692520689 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 03:28:37,944 INFO aiogram.event MainThread : Update id=692520690 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 03:28:45,499 ERROR root MainThread : (pymysql.err.DataError) (1265, "Data truncated for column 'price' at row 1")
+[SQL: INSERT INTO `Order` (client_id, employee_id, food_id, name, type, date, price, address, status, deliver_date) VALUES (%(client_id)s, %(employee_id)s, %(food_id)s, %(name)s, %(type)s, %(date)s, %(price)s, %(address)s, %(status)s, %(deliver_date)s)]
+[parameters: {'client_id': '1', 'employee_id': '1', 'food_id': '1', 'name': 'Пицца 5 сыра', 'type': 'dropoff', 'date': datetime.datetime(2024, 6, 17, 3, 27, 10, 795490), 'price': 'тест', 'address': None, 'status': 'Created', 'deliver_date': None}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-06-17 03:28:45,501 INFO aiogram.event MainThread : Update id=692520691 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:29:58,775 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:29:59,037 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:30:02,066 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:30:02,119 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:30:02,398 INFO aiogram.event MainThread : Update id=692520692 is handled. Duration 217 ms by bot id=7395504801
+2024-06-17 03:30:09,533 INFO aiogram.event MainThread : Update id=692520693 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 03:30:11,893 INFO aiogram.event MainThread : Update id=692520694 is handled. Duration 187 ms by bot id=7395504801
+2024-06-17 03:30:13,214 INFO aiogram.event MainThread : Update id=692520695 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:30:14,207 INFO aiogram.event MainThread : Update id=692520696 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:30:16,230 INFO aiogram.event MainThread : Update id=692520697 is handled. Duration 94 ms by bot id=7395504801
+2024-06-17 03:30:17,970 INFO aiogram.event MainThread : Update id=692520698 is handled. Duration 141 ms by bot id=7395504801
+2024-06-17 03:30:18,943 INFO aiogram.event MainThread : Update id=692520699 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:30:26,914 INFO aiogram.event MainThread : Update id=692520700 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:30:28,223 INFO aiogram.event MainThread : Update id=692520701 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:30:30,532 DEBUG root MainThread : ['id', 'client_id', 'employee_id', 'food_id', 'name', 'type', 'date', 'price', 'address', 'status', 'deliver_date']
+2024-06-17 03:30:30,601 ERROR root MainThread : list.remove(x): x not in list
+2024-06-17 03:30:30,601 INFO aiogram.event MainThread : Update id=692520702 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:31:03,903 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:31:04,166 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:31:07,158 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:31:07,211 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:31:07,303 DEBUG root MainThread : ['id', 'client_id', 'employee_id', 'food_id', 'name', 'type', 'date', 'price', 'address', 'status', 'deliver_date']
+2024-06-17 03:31:07,620 INFO aiogram.event MainThread : Update id=692520703 is handled. Duration 359 ms by bot id=7395504801
+2024-06-17 03:31:10,581 INFO aiogram.event MainThread : Update id=692520704 is handled. Duration 92 ms by bot id=7395504801
+2024-06-17 03:31:57,520 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:31:57,774 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:32:00,925 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:32:00,979 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:32:04,430 INFO aiogram.event MainThread : Update id=692520705 is handled. Duration 266 ms by bot id=7395504801
+2024-06-17 03:32:12,561 INFO aiogram.event MainThread : Update id=692520706 is handled. Duration 94 ms by bot id=7395504801
+2024-06-17 03:32:13,855 INFO aiogram.event MainThread : Update id=692520707 is handled. Duration 157 ms by bot id=7395504801
+2024-06-17 03:32:15,098 INFO aiogram.event MainThread : Update id=692520708 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:32:16,295 INFO aiogram.event MainThread : Update id=692520709 is handled. Duration 78 ms by bot id=7395504801
+2024-06-17 03:32:23,944 INFO aiogram.event MainThread : Update id=692520710 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 03:32:24,592 DEBUG root MainThread : ['id', 'client_id', 'employee_id', 'food_id', 'name', 'type', 'date', 'price', 'address', 'status', 'deliver_date']
+2024-06-17 03:32:24,693 INFO aiogram.event MainThread : Update id=692520711 is handled. Duration 108 ms by bot id=7395504801
+2024-06-17 03:32:47,713 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:32:47,977 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:32:51,248 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:32:51,310 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:32:51,395 DEBUG root MainThread : ['id', 'client_id', 'employee_id', 'food_id', 'name', 'type', 'date', 'price', 'address', 'status', 'deliver_date']
+2024-06-17 03:32:51,619 INFO aiogram.event MainThread : Update id=692520712 is handled. Duration 234 ms by bot id=7395504801
+2024-06-17 03:33:30,145 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:33:30,405 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:33:33,519 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:33:33,573 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:33:35,183 DEBUG root MainThread : ['id', 'client_id', 'employee_id', 'food_id', 'name', 'type', 'date', 'price', 'address', 'status', 'deliver_date']
+2024-06-17 03:33:35,409 INFO aiogram.event MainThread : Update id=692520713 is handled. Duration 233 ms by bot id=7395504801
+2024-06-17 03:33:44,587 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:33:44,839 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:33:47,840 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:33:47,887 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:33:53,217 DEBUG root MainThread : ['id', 'client_id', 'employee_id', 'food_id', 'name', 'type', 'date', 'price', 'address', 'status', 'deliver_date']
+2024-06-17 03:33:53,440 INFO aiogram.event MainThread : Update id=692520714 is handled. Duration 235 ms by bot id=7395504801
+2024-06-17 03:33:59,920 INFO aiogram.event MainThread : Update id=692520715 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 03:34:00,852 INFO aiogram.event MainThread : Update id=692520716 is handled. Duration 94 ms by bot id=7395504801
+2024-06-17 03:34:01,793 INFO aiogram.event MainThread : Update id=692520717 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:34:03,572 INFO aiogram.event MainThread : Update id=692520718 is handled. Duration 77 ms by bot id=7395504801
+2024-06-17 03:34:04,725 INFO aiogram.event MainThread : Update id=692520719 is handled. Duration 234 ms by bot id=7395504801
+2024-06-17 03:34:05,912 INFO aiogram.event MainThread : Update id=692520720 is handled. Duration 62 ms by bot id=7395504801
+2024-06-17 03:34:07,747 INFO aiogram.event MainThread : Update id=692520721 is handled. Duration 125 ms by bot id=7395504801
+2024-06-17 03:34:36,732 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:34:36,983 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:35:11,685 INFO aiogram.dispatcher MainThread : Start polling
+2024-06-17 03:35:11,742 INFO aiogram.dispatcher MainThread : Run polling for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'
+2024-06-17 03:35:13,713 INFO aiogram.event MainThread : Update id=692520722 is handled. Duration 328 ms by bot id=7395504801
+2024-06-17 03:35:14,975 INFO aiogram.event MainThread : Update id=692520723 is handled. Duration 94 ms by bot id=7395504801
+2024-06-17 03:35:16,433 INFO aiogram.event MainThread : Update id=692520724 is handled. Duration 235 ms by bot id=7395504801
+2024-06-17 03:35:18,321 INFO aiogram.dispatcher MainThread : Polling stopped
+2024-06-17 03:35:18,586 INFO aiogram.dispatcher MainThread : Polling stopped for bot @test_king_kong_pizza_bot id=7395504801 - 'test_bot'

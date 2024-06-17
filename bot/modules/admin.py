@@ -1,3 +1,5 @@
+import logging
+
 from aiogram import F, Router
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, CallbackQuery
@@ -24,8 +26,8 @@ async def admin_order(callback: CallbackQuery) -> None:
 @router.callback_query(F.data.startswith("admin_order_client"))
 async def client_menu(callback: CallbackQuery) -> None:
     markup = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="Добавить нового клиента", callback_data='add_Client'),
-         InlineKeyboardButton(text="Посмотреть клиентов", callback_data='check_Сlient')],
+        [InlineKeyboardButton(text="Добавить нового клиента", callback_data='create_Client'),
+         InlineKeyboardButton(text="Посмотреть клиентов", callback_data='check_Client')],
         [InlineKeyboardButton(text='В меню', callback_data='go_back')]
     ])
     await bot.send_message(callback.from_user.id, "Что вы хотите сделать?", reply_markup=markup)
@@ -34,7 +36,7 @@ async def client_menu(callback: CallbackQuery) -> None:
 @router.callback_query(F.data.startswith("order_"))
 async def order_info(callback: CallbackQuery) -> None:
     order_type = callback.data.split('_')[1]
-    kb = [[InlineKeyboardButton(text='Создание заказа', callback_data=f'add_Order_{order_type}'),
+    kb = [[InlineKeyboardButton(text='Создание заказа', callback_data=f'create_Order_{order_type}'),
            InlineKeyboardButton(text='Посмотреть заказы', callback_data=f'check_Order_{order_type}')],
           [InlineKeyboardButton(text="В меню", callback_data='go_back')]]
     markup = InlineKeyboardMarkup(inline_keyboard=kb)
@@ -44,7 +46,7 @@ async def order_info(callback: CallbackQuery) -> None:
 """ CREATION LOGIC STEP BY STEP"""
 
 
-@router.callback_query(F.data.startswith("add_"))
+@router.callback_query(F.data.startswith("create_"))
 async def create_order(callback: CallbackQuery, state: FSMContext) -> None:
     markup = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='В меню', callback_data='go_back')]])
     class_name = callback.data.split('_')[1]
@@ -107,9 +109,9 @@ async def input_employee(message: Message, state: FSMContext) -> None:
     match data["class_name"]:
         case "Order":
             if data["type"] == "delivery":
-                await state.set_state(StatesAdmin.inputEnd)
-            else:
                 await state.set_state(StatesAdmin.inputAddress)
+            else:
+                await state.set_state(StatesAdmin.inputEnd)
             await state.update_data(dict(employee_id=message.text))
         case "Food":
             await state.set_state(StatesInfo.inputRecipe)
@@ -140,7 +142,6 @@ async def input_employee(message: Message, state: FSMContext) -> None:
     markup = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='В меню', callback_data='go_back')]])
     data = await state.get_data()
     class_name = data["class_name"]
-    data.pop("class_name")
     match class_name:
         case "Order":
             if data["type"] == "delivery":
@@ -156,6 +157,7 @@ async def input_employee(message: Message, state: FSMContext) -> None:
         case _:
             pass
     data = await state.get_data()
+    data.pop("class_name")
     db.add(eval(class_name)(**data))
     db.commit()
     await state.clear()
@@ -185,13 +187,14 @@ async def obj_checkout(callback: CallbackQuery) -> None:
 
 @router.callback_query(F.data.startswith("info_"))
 async def info_obj(callback: CallbackQuery) -> None:
-    class_id = callback.data.split('_')[2]
-    class_name = callback.data.split('_')[2]
-    obj = db.get(eval(class_name), int(class_id))
+    class_id = int(callback.data.split('_')[2])
+    class_name = callback.data.split('_')[1]
+    obj = db.get(eval(class_name), class_id)
     kb: list
     markup = InlineKeyboardBuilder()
     text = ''
-    obj_keys = eval(class_name).__table__.columns.keys()
+    obj_keys = obj.__table__.columns.keys()
+    logging.debug(obj_keys)
     obj_keys.remove("id")
     match class_name:
         case "Order":
@@ -199,14 +202,12 @@ async def info_obj(callback: CallbackQuery) -> None:
                 obj_keys.remove("address")
             obj_keys.remove("deliver_date")
             obj_keys.remove("date")
-            obj_keys.remove("is_active")
-        case "Recipe":
-            obj_keys.remove("food")
     for key in obj_keys:
-        if isAdmin(callback.from_user.id):
+        if isAdmin(callback.from_user.id) and key != "status":
             markup.add(InlineKeyboardButton(text=f"Изменить поле {key}",
                                             callback_data=f"change-{class_name}-{class_id}-{key}"))
-        text += f"Поле {key} - {getattr(obj, key)}\n"
+        if hasattr(obj, key):
+            text += f"Поле {key} - {getattr(obj, key)}\n"
     markup.adjust(2, 2)
     if class_name == "Order":
         if isAdmin(callback.from_user.id):
@@ -241,7 +242,7 @@ async def change_client(callback: CallbackQuery, state: FSMContext) -> None:
 async def input_info(message: Message, state: FSMContext) -> None:
     data = await state.get_data()
     field = data["field"]
-    class_id = data["id"]
+    class_id = data["class_id"]
     class_name = data["class_name"]
     obj = db.get(eval(class_name), int(class_id))
     markup = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="В меню", callback_data='go_back')]])
@@ -275,6 +276,7 @@ async def send_cooking(callback: CallbackQuery) -> None:
             f"Рецепт - {recipe.content}\n"
             f"Цена - {order.price}")
     await bot.send_message(employee.telegram_id, text, reply_markup=markup)
+    await bot.send_message(callback.from_user.id, "Успешно отправлено!", reply_markup=markup)
 
 
 """ HERE WE CAN CHANGE STATUS"""

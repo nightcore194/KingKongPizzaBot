@@ -4,13 +4,15 @@
 
 Driver - MySQL <br>
 ORM - SQLAlchemy <br>
-Migrations - alembic
+Migrations - alembic <br>
+Telegram bot - aiogram 3 <br>
 
 
 ## Migrations
 
 ------
 
+https://habr.com/ru/articles/585228/ <br>
 MAKE MIGRATIONS IN *bot*
 > <code>
 > alembic init migrations <br>
@@ -42,3 +44,5 @@ python -c "from bot import run; run()"
 Run env: <br>
 1. Unix-like os - <code>source *your_venv*/bin/activate</code>
 2. Windows - <code>*your_venv*/Scripts/activate</code>
+
+Second type of running - run file <code>long_pool.py</code>

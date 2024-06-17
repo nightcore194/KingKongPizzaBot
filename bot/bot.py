@@ -1,4 +1,6 @@
 import json
+import logging
+
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters.command import Command
 from aiogram.fsm.context import FSMContext
@@ -33,8 +35,13 @@ async def error_handler(event: ErrorEvent, state: FSMContext) -> None:
     markup = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='В меню', callback_data='go_back')]])
     db.rollback()
     await state.clear()
-    await bot.send_message(chat_id=event.update.message.from_user.id, text="Произошла ошибка!",
+    try:
+        await bot.send_message(chat_id=event.update.callback_query.from_user.id, text="Произошла ошибка!",
                            reply_markup=markup)
+    except:
+        await bot.send_message(chat_id=event.update.message.from_user.id, text="Произошла ошибка!",
+                               reply_markup=markup)
+    logging.error(event.exception)
 
 
 """ BASIC FUNCTIONALITY """
@@ -42,7 +49,7 @@ async def error_handler(event: ErrorEvent, state: FSMContext) -> None:
 
 @dp.message(Command("start"))
 async def start(message: Message, state: FSMContext) -> None:
-    if db.query(Employee).filter(Employee.telegram_id == message.from_user.id).first():
+    if db.query(Employee).filter(Employee.telegram_id == message.from_user.id).first() is None:
         await bot.send_message(message.from_user.id, "Привет! Для того что бы авторизоваться,"
                                                      " введите свой номер телефона")
         await state.set_state(States.register)

@@ -15,7 +15,7 @@ async def admin_info(callback: CallbackQuery) -> None:
     await bot.send_message(callback.from_user.id, "Выберете категорию", reply_markup=markup)
 
 
-@router.callback_query(F.data.startswith("food_techmap"))
+@router.callback_query(F.data.startswith("food_"))
 async def food_catalog(callback: CallbackQuery) -> None:
     destination = callback.data.split("_")[1]
     if destination == "techmap":

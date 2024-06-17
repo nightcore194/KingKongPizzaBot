@@ -12,7 +12,7 @@ from bot.states import StatesReport
 router = Router()
 
 
-@router.callback_query(F.data == 'admin_info')
+@router.callback_query(F.data == 'admin_report')
 async def admin_info(callback: CallbackQuery) -> None:
     kb = [[InlineKeyboardButton(text="Анализ продаж за весь период", callback_data='analyze_all'),
            InlineKeyboardButton(text="Анализ продаж за конкретный период", callback_data='analyze_period')],
@@ -28,8 +28,12 @@ async def analyze(callback: CallbackQuery, state: FSMContext) -> None:
     match analyze_type:
         case "all":
             result = db.query(func.sum(Order.price).label("sum_price")).first()
+            if result.sum_price is not None:
+                price = int(result.sum_price)
+            else:
+                price = 0
             await bot.send_message(callback.from_user.id,
-                                   f"Сумма продаж за весь период - {int(result.sum_price)}", reply_markup=markup)
+                                   f"Сумма продаж за весь период - {price}", reply_markup=markup)
         case "period":
             await state.set_state(StatesReport.inputEndDate)
             await bot.send_message(callback.from_user.id, "Введите начальную дату в формате дд.мм.гггг")
@@ -50,9 +54,13 @@ async def analyze_date(message: Message, state: FSMContext) -> None:
     end_date = datetime.strptime(message.text, "%d.%m.%Y").strftime("%Y-%m-%d")
     markup = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="В меню", callback_data='go_back')]])
     result = db.query(func.sum(Order.price).label("sum_price")).filter(Order.date.between(start_date, end_date)).first()
+    if result.sum_price is not None:
+        price = int(result.sum_price)
+    else:
+        price = 0
     await state.clear()
     await bot.send_message(message.from_user.id,
-                           f"Сумма продаж за период c {data["start_date"]} по {message.text} - {int(result.sum_price)}",
+                           f"Сумма продаж за период c {data["start_date"]} по {message.text} - {price}",
                            reply_markup=markup)
 
 

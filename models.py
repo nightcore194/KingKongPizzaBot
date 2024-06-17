@@ -2,7 +2,7 @@ import datetime
 import json
 
 from sqlalchemy import create_engine
-from sqlalchemy import String, Integer, ForeignKey, Text, Date, Boolean, DateTime, ARRAY, Float
+from sqlalchemy import String, Integer, ForeignKey, DateTime, Float, Text
 from sqlalchemy.orm import mapped_column, Mapped, relationship, scoped_session, sessionmaker, DeclarativeBase
 
 from typing import List
@@ -84,9 +84,9 @@ class Recipe(Base):
     __tablename__ = "Recipe"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    content: Mapped[float] = mapped_column(Float, nullable=True)
+    content: Mapped[str] = mapped_column(Text, nullable=True)
 
-    food: Mapped["Food"] = mapped_column()
+    food: Mapped["Food"] = relationship("Food", backref="Recipe")
 
     def __str__(self):
         return f'Рецепт {self.food.name}'
